@@ -1,0 +1,66 @@
+*{
+   text-align: center;
+}
+
+.foodBackground{
+    background-image: url("https://www.foodiesfeed.com/wp-content/uploads/2019/06/beautiful-vibrant-shot-of-traditional-korean-meals.jpg");
+}
+
+.exbackground{
+    background-image: url("https://fullhdpictures.com/wp-content/uploads/2016/08/Cute-Fitness-Girl-Wallpaper.jpg");
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+    margin: 10px 0px;
+}
+
+input,button{
+    border: 1px solid black;
+}
+
+.userInputArea div:nth-last-child(1) > input,button{
+    padding: 3px 10px;
+    margin: 8px 0px;
+}
+
+.userInputArea div:nth-last-child(1) > input:hover{
+    background-color: #6819c2;
+    color: white;
+}
+
+.userInputArea{
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+#resultMessage{
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+#userResult{
+    margin:auto;
+    align-items: center;
+}
+
+.gainedWeight{
+    background-color: rgb(221, 221, 10);
+}
+
+.lostWeight{
+    background-color: rgb(21, 7, 31);
+}
+
+th,td{
+    padding: 5px;
+}
+
+.calorieChartTable{
+    margin: auto;
+    align-items: center;
+}
+.calorieTableHeading{
+    font-weight: 800;
+}

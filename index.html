@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Check 360</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-warning">
+    <div>
+        <div class="row bg-dark">
+            <div class="col">
+                <nav class="navbar navbar-expand navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul class="navbar-nav mr-auto mt-4 mt-lg-0">
+                            <li class="nav-item active ml-5">
+                                <a class="nav-link" href="index.html">
+                                    <h3>HealthCheck360</h3> <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-5 mt-2">
+                                <a class="nav-link" href="health.html">exercise calorie
+                                    chart</a>
+                            </li>
+                            <li class="nav-item mx-5 mt-2">
+                                <a class="nav-link" href="food.html">food calorie chart</a>
+                            </li>
+                        </ul>
+                        <div class="w-25 d-flex">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div id="mainContainer">
+            <h1>Fill Data and Get Details</h1>
+            <div class="userInputArea">
+                <form>
+                    <div class="row">
+                        <div class="col-6 border-dark border foodBackground">
+                            <h3>Food</h3>
+                            <div>
+                                <label>Food</label>
+                                <input type="text" class="input" />
+                                <br />
+                                <label>Calories</label>
+                                <input type="number" placeholder="Calories added" class="input">
+                            </div>
+                        </div>
+                        <div class="col-6 border-dark border exbackground">
+                            <h3>Excercise</h3>
+                            <label>Exercise</label>
+                            <input type="text" class="input" />
+                            <br />
+                            <label>Calories</label>
+                            <input type="number" placeholder="Calories spent" class="input">
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="submit" style="border-radius: 20px; width: 200px;">
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- showing results area -->
+            <div class="text-danger font-weight-bolder" id="resultMessage">
+
+            </div>
+
+            <div>
+                <table id="userResult">
+                    <tr>
+                        <th>Calories Consumed</th>
+                        <th>Calories Spent</th>
+                        <th>Net Calories Gained or Lost</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
